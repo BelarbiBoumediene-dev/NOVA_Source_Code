@@ -82,38 +82,3 @@ NOVA includes an internal reward system using **Coins**.
 
 Coins can be earned through activities such as completing learning quests and quizzes.
 
-The Coins system is an **in-app reward mechanism** and is separate from Solana's SKR token.
-
----
-
-## 🏗️ Architecture
-
-```text
-NOVA
-│
-├── Android Application
-│   ├── Kotlin
-│   ├── XML UI
-│   ├── Activities
-│   ├── Animations
-│   └── Gamification
-│
-├── AI Learning System
-│   ├── Learning Goal
-│   ├── User Level
-│   ├── Daily Time
-│   └── Duration
-│
-├── Quest Engine
-│   ├── Chapters
-│   ├── Lessons
-│   ├── Quizzes
-│   └── Challenges
-│
-├── Solana Integration
-│   ├── Mobile Wallet Adapter
-│   ├── Wallet Authorization
-│   └── Achievement Verification
-│
-└── Firebase
-    └── User / Progress Data
