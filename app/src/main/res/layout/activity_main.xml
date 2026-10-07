@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_world_map">
+
+    <!-- ========================================================= -->
+    <!-- BACKGROUND                                                -->
+    <!-- ========================================================= -->
+
+    <ImageView
+        android:id="@+id/gameBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/a"
+        android:scaleType="centerCrop"
+        android:alpha="0.20"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E9060A16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- ========================================================= -->
+    <!-- MAIN SCROLL                                               -->
+    <!-- ========================================================= -->
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="105dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- ================================================= -->
+            <!-- PLAYER HUD                                        -->
+            <!-- ================================================= -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                app:cardBackgroundColor="#0D1221"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="0dp"
+                app:strokeColor="#202B43"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <!-- Avatar -->
+
+                    <FrameLayout
+                        android:id="@+id/playerAvatarFrame"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/bg_game_icon_button"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:id="@+id/playerAvatarEffect"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:contentDescription="@null" />
+
+                        <ImageView
+                            android:id="@+id/playerAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/m1"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="Player avatar" />
+
+                    </FrameLayout>
+
+
+                    <!-- Player information -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/userNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NOVA"
+                            android:textColor="#F5F7FF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.07" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/levelText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LEVEL 1"
+                                android:textColor="#6EA8FF"
+                                android:textSize="9sp"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.10" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:text="•"
+                                android:textColor="#3C4760"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:id="@+id/xpText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:text="0 XP"
+                                android:textColor="#A78BFA"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:id="@+id/xpProgressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="135dp"
+                            android:layout_height="4dp"
+                            android:layout_marginTop="6dp"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressTint="#8B5CF6"
+                            android:backgroundTint="#202A42" />
+
+                    </LinearLayout>
+
+
+                    <!-- Coins -->
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        app:cardBackgroundColor="#151A2B"
+                        app:cardCornerRadius="19dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="#293451"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/coinsText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:text="◈ 0"
+                            android:textColor="#A78BFA"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/logoutButton"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Logout"
+                        android:insetLeft="0dp"
+                        android:insetRight="0dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:backgroundTint="#151A2B"
+                        app:cornerRadius="21dp"
+                        app:icon="@drawable/ic_logout"
+                        app:iconGravity="textStart"
+                        app:iconTint="#8A96B2"
+                        app:strokeColor="#293451"
+                        app:strokeWidth="1dp" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- ================================================= -->
+            <!-- GAME TITLE                                        -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WELCOME BACK, NOVA"
+                    android:textColor="#6F7A96"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="YOUR ADVENTURE"
+                    android:textColor="#F5F7FF"
+                    android:textSize="29sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.02" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Choose your next move."
+                    android:textColor="#7D88A3"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <!-- COMMAND DECK: the home screen's primary visual anchor. -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/bg_command_deck"
+                android:clipToOutline="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/plantwo"
+                    android:scaleType="centerCrop"
+                    android:alpha="0.30"
+                    android:contentDescription="@null" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#8A0A1026" />
+
+                <!-- Lightweight holograms create depth without a bitmap or blur. -->
+                <View
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="34dp"
+                    android:alpha="0.70"
+                    android:background="@drawable/bg_hologram_orb" />
+
+                <View
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="112dp"
+                    android:layout_marginEnd="116dp"
+                    android:alpha="0.60"
+                    android:background="@drawable/bg_hologram_orb" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#332E6CFF"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="COMMAND DECK  •  ONLINE"
+                        android:textColor="#B9D1FF"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:text="BUILD YOUR\nNEXT WORLD"
+                        android:textColor="#FFFFFF"
+                        android:textSize="29sp"
+                        android:textStyle="bold"
+                        android:lineSpacingExtra="0dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Transform one goal into a focused mission path."
+                        android:textColor="#B8C4DC"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_archive_panel"
+                    android:gravity="center"
+                    android:text="✦"
+                    android:textColor="#A78BFA"
+                    android:textSize="24sp" />
+            </FrameLayout>
+
+
+            <!-- ================================================= -->
+            <!-- GAME HUB                                          -->
+            <!-- ================================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="GAME HUB"
+                android:textColor="#707B97"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.20" />
+
+
+            <!-- ================================================= -->
+            <!-- SEEKER + WORKSHOP CARDS                           -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- SEEKER -->
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/seekerQuestCard"
+                    android:layout_width="0dp"
+                    android:layout_height="145dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#101A2C"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="#2B4D78"
+                    app:strokeWidth="1dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            app:cardBackgroundColor="#172A48"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_sparkle"
+                                android:tint="#6EA8FF"
+                                android:contentDescription="@null" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:id="@+id/seekerQuestTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="SEEKER QUEST"
+                            android:textColor="#F5F7FF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.06" />
+
+                        <TextView
+                            android:id="@+id/seekerQuestStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="LOADING DAILY QUEST..."
+                            android:textColor="#6EA8FF"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.08" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/seekerQuestAttentionBadge"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="top|end"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/seeker_attention_badge"
+                            android:contentDescription="Seeker Quest needs attention"
+                            android:gravity="center"
+                            android:text="!"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                    <!-- Compatibility ID for MainActivity.kt -->
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- WORKSHOP -->
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cosmeticsCard"
+                    android:layout_width="0dp"
+                    android:layout_height="145dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#15142A"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="#3A3561"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            app:cardBackgroundColor="#252142"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_crown"
+                                android:tint="#A78BFA"
+                                android:contentDescription="@null" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="WORKSHOP"
+                            android:textColor="#F5F7FF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.06" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="CUSTOMIZE NOVA"
+                            android:textColor="#A78BFA"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.06" />
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- CREATE QUEST                                      -->
+            <!-- ================================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:text="NEW ADVENTURE"
+                android:textColor="#707B97"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.20" />
+
+
+            <!-- Quest objective -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                app:cardBackgroundColor="#0E1526"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="0dp"
+                app:strokeColor="#26334E"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="17dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="QUEST OBJECTIVE"
+                            android:textColor="#A78BFA"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="01"
+                            android:textColor="#46516C"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/goalInputLayout"
+                        style="@style/Widget.Quizz.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="WHAT DO YOU WANT TO ACHIEVE?">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/goalEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:gravity="top|start"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:maxLines="6"
+                            android:minLines="4"
+                            android:paddingTop="15dp"
+                            android:textColor="#F5F7FF"
+                            android:textColorHint="#5E6984"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- ================================================= -->
+            <!-- QUEST SETTINGS                                    -->
+            <!-- ================================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="LOADOUT"
+                android:textColor="#707B97"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.20" />
+
+
+            <!-- Experience -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/experienceButton"
+                style="@style/Widget.Quizz.SelectButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="9dp"
+                android:text="⚔   BEGINNER"
+                android:textAlignment="viewStart"
+                android:textColor="#F5F7FF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:icon="@drawable/ic_chevron_down"
+                app:iconGravity="textEnd"
+                app:iconTint="#6EA8FF" />
+
+
+            <!-- Daily time -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dailyTimeButton"
+                style="@style/Widget.Quizz.SelectButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="◷   30 MIN / DAY"
+                android:textAlignment="viewStart"
+                android:textColor="#F5F7FF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:icon="@drawable/ic_chevron_down"
+                app:iconGravity="textEnd"
+                app:iconTint="#6EA8FF" />
+
+
+            <!-- Duration -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/durationButton"
+                style="@style/Widget.Quizz.SelectButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="◈   7 DAYS"
+                android:textAlignment="viewStart"
+                android:textColor="#F5F7FF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:icon="@drawable/ic_chevron_down"
+                app:iconGravity="textEnd"
+                app:iconTint="#6EA8FF" />
+
+
+            <!-- ================================================= -->
+            <!-- START JOURNEY - HERO                              -->
+            <!-- ================================================= -->
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/generateButton"
+                    style="@style/Widget.Quizz.GenerateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="START JOURNEY"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.09"
+                    android:layout_marginTop="22dp"
+                    android:backgroundTint="#4F8CFF"
+                    app:icon="@drawable/ic_sparkle"
+                    app:iconGravity="textStart"
+                    app:iconTint="#FFFFFF" />
+
+
+
+            <!-- ================================================= -->
+            <!-- GAME TIP                                          -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✦"
+                    android:textColor="#8B5CF6"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:text="YOUR GOAL. YOUR QUEST. YOUR PROGRESS."
+                    android:textColor="#505B75"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:text="✦"
+                    android:textColor="#8B5CF6"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <!-- ========================================================= -->
+    <!-- BOTTOM GAME NAVIGATION                                   -->
+    <!-- ========================================================= -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#0B1020"
+        app:cardCornerRadius="23dp"
+        app:cardElevation="14dp"
+        app:strokeColor="#24314C"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <!-- HOME -->
+
+            <LinearLayout
+                android:id="@+id/navHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_home"
+                    android:tint="#6EA8FF"
+                    android:contentDescription="Home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="HOME"
+                    android:textColor="#6EA8FF"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.10" />
+
+            </LinearLayout>
+
+
+            <!-- JOURNEYS -->
+
+            <LinearLayout
+                android:id="@+id/navJourneys"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_journeys"
+                    android:tint="#626D89"
+                    android:contentDescription="Journeys" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="JOURNEYS"
+                    android:textColor="#626D89"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- TROPHIES -->
+
+            <LinearLayout
+                android:id="@+id/navAchievements"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_trophy"
+                    android:tint="#626D89"
+                    android:contentDescription="Trophies" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="TROPHIES"
+                    android:textColor="#626D89"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- NOVA -->
+
+            <LinearLayout
+                android:id="@+id/navNova"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_crown"
+                    android:tint="#626D89"
+                    android:contentDescription="Nova" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Rank"
+                    android:textColor="#626D89"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

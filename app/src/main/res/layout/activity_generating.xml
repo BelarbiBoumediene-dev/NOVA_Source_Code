@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_generation">
+
+
+    <!-- ========================================================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================================================= -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/plantwo"
+        android:scaleType="centerCrop"
+        android:alpha="0.13"
+        android:contentDescription="@null" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D9070A16" />
+
+
+    <!-- ========================================================= -->
+    <!-- TOP GLOW -->
+    <!-- ========================================================= -->
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="-150dp"
+        android:alpha="0.16"
+        android:background="@drawable/bg_logo" />
+
+
+    <!-- ========================================================= -->
+    <!-- CONTENT -->
+    <!-- ========================================================= -->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="28dp">
+
+        <LinearLayout
+            android:id="@+id/generatingContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+
+            <!-- ================================================= -->
+            <!-- NOVA CORE -->
+            <!-- ================================================= -->
+
+            <FrameLayout
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="50dp">
+
+                <View
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:alpha="0.18"
+                    android:background="@drawable/bg_logo" />
+
+                <View
+                    android:layout_width="154dp"
+                    android:layout_height="154dp"
+                    android:layout_gravity="center"
+                    android:alpha="0.32"
+                    android:background="@drawable/bg_logo" />
+
+                <View
+                    android:layout_width="126dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_logo" />
+
+                <ImageView
+                    android:id="@+id/companionAvatar"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img1"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Nova AI Companion" />
+
+                <TextView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="bottom|end"
+                    android:gravity="center"
+                    android:text="AI"
+                    android:textColor="#FFFFFF"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_logo" />
+
+            </FrameLayout>
+
+
+            <!-- ================================================= -->
+            <!-- TITLE -->
+            <!-- ================================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="BUILDING YOUR WORLD"
+                android:textColor="#F5F7FF"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="YOUR ADVENTURE IS TAKING SHAPE"
+                android:textColor="#8B5CF6"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.18" />
+
+
+            <!-- ================================================= -->
+            <!-- STATUS + PROGRESS -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:padding="17dp"
+                android:background="@drawable/bg_logo">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/bg_logo" />
+
+                    <TextView
+                        android:id="@+id/statusText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:text="Understanding your goal..."
+                        android:textColor="#F5F7FF"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/progressText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10%"
+                        android:textColor="#6EA8FF"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:layout_marginTop="14dp"
+                    android:max="100"
+                    android:progress="10"
+                    android:progressTint="#4F8CFF"
+                    android:progressBackgroundTint="#202941" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/retryButton"
+                style="@style/Widget.Quizz.PremiumButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="14dp"
+                android:text="RETRY"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:backgroundTint="#4F8CFF"
+                app:cornerRadius="16dp"
+                android:visibility="gone" />
+
+
+            <!-- ================================================= -->
+            <!-- QUEST CREATION -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/bg_logo">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QUEST CREATION"
+                    android:textColor="#78839F"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="◆  ANALYZING GOAL"
+                    android:textColor="#626D89"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="◆  DESIGNING ADVENTURE"
+                    android:textColor="#626D89"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="◆  PREPARING CHALLENGES"
+                    android:textColor="#626D89"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- HINT -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:background="@drawable/bg_logo">
+
+                <TextView
+                    android:id="@+id/hintText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Your companion is getting ready..."
+                    android:textColor="#78839F"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- FOOTER -->
+            <!-- ================================================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="NOVA  •  AI QUEST"
+                android:textColor="#626D89"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.18" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

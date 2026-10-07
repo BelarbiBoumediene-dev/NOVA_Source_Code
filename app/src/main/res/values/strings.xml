@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NOVA</string>
+
+    <string name="app_title">AI QUEST</string>
+    <string name="app_subtitle">Turn your goal into an adventure.</string>
+
+    <string name="goal_title">What do you want to achieve?</string>
+    <string name="goal_description">Tell us your goal and we will build your journey.</string>
+    <string name="goal_hint">Example: I want to learn Kotlin and build my first Android app.</string>
+
+    <string name="experience_title">Experience level</string>
+    <string name="beginner">Beginner</string>
+
+    <string name="daily_time_title">Daily time</string>
+    <string name="thirty_minutes">30 min / day</string>
+
+    <string name="duration_title">Journey duration</string>
+    <string name="thirty_days">30 days</string>
+
+    <string name="generate_world">Generate My World</string>
+
+</resources>

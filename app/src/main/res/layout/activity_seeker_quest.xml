@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_world_map"
+    android:paddingStart="22dp"
+    android:paddingEnd="22dp"
+    android:paddingTop="18dp"
+    android:paddingBottom="24dp">
+
+    <!-- ========================================================= -->
+    <!-- BACK -->
+    <!-- ========================================================= -->
+
+    <TextView
+        android:id="@+id/seekerQuestBack"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical"
+        android:text="‹  BACK"
+        android:textColor="#8B99B3"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:fontFamily="sans"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- ========================================================= -->
+    <!-- HEADER -->
+    <!-- ========================================================= -->
+
+    <TextView
+        android:id="@+id/seekerQuestTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="SEEKER DAILY QUEST"
+        android:textColor="#F5F7FC"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="sans"
+        android:letterSpacing="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekerQuestBack" />
+
+    <TextView
+        android:id="@+id/seekerQuestSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Learn today. Earn a Seeker reward."
+        android:textColor="#71809B"
+        android:textSize="13sp"
+        android:fontFamily="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekerQuestTitle" />
+
+
+    <!-- ========================================================= -->
+    <!-- MAIN CARD -->
+    <!-- ========================================================= -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/seekerQuestCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:cardBackgroundColor="#0E1421"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#202E46"
+        app:strokeWidth="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekerQuestSubtitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- ================================================= -->
+            <!-- CARD HEADER -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Icon -->
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="#142440">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="✦"
+                        android:textColor="#70A3FF"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <!-- Title -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DAILY QUEST"
+                        android:textColor="#6EA0F7"
+                        android:textSize="9sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Seeker Challenge"
+                        android:textColor="#F1F4FA"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Reward -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="#142440"
+                    android:text="+5"
+                    android:textColor="#70A3FF"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- DIVIDER -->
+            <!-- ================================================= -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#1A263A" />
+
+
+            <!-- ================================================= -->
+            <!-- STATUS -->
+            <!-- ================================================= -->
+
+            <TextView
+                android:id="@+id/seekerQuestStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:textColor="#EAF0F9"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="2dp" />
+
+
+            <!-- ================================================= -->
+            <!-- WALLET -->
+            <!-- ================================================= -->
+
+            <TextView
+                android:id="@+id/seekerWalletText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="#75849E"
+                android:textSize="11sp"
+                android:fontFamily="monospace" />
+
+
+            <!-- ================================================= -->
+            <!-- REWARD -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:background="#0A101B">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TODAY'S REWARD"
+                        android:textColor="#63718A"
+                        android:textSize="9sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Complete any lesson quiz"
+                        android:textColor="#9AA8BF"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+5 COINS"
+                    android:textColor="#6EA0F7"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- ACTION -->
+            <!-- ================================================= -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/seekerQuestAction"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="18dp"
+                android:text="VERIFY WITH SOLANA WALLET"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:stateListAnimator="@null"
+                app:backgroundTint="#4F86F7"
+                app:cornerRadius="14dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- ========================================================= -->
+    <!-- BOTTOM BRAND -->
+    <!-- ========================================================= -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="AI QUEST  •  SEEKER"
+        android:textColor="#303C53"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

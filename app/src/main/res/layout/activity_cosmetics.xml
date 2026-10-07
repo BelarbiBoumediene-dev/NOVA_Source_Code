@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_world_map"
+    android:fillViewport="true"
+    android:clipToPadding="false"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="34dp">
+
+
+        <!-- ===================================================== -->
+        <!-- TOP BAR                                               -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- BACK -->
+
+            <TextView
+                android:id="@+id/backButton"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@drawable/bg_game_icon_button"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#9AA8C5"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <!-- TITLE -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOVA SHOP"
+                    android:textColor="#F5F7FF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="CUSTOMIZATION DECK"
+                    android:textColor="#667493"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.16" />
+
+            </LinearLayout>
+
+            <!-- RIGHT SPACER -->
+
+            <View
+                android:layout_width="46dp"
+                android:layout_height="46dp" />
+
+        </LinearLayout>
+
+
+
+        <!-- ===================================================== -->
+        <!-- COINS HUD                                              -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR LOADOUT"
+                    android:textColor="#A8B4CE"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Select your Nova appearance"
+                    android:textColor="#626D89"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                app:cardBackgroundColor="#11182A"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="0dp"
+                app:strokeColor="#293451"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:id="@+id/coinsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="◈ 0"
+                    android:textColor="#A78BFA"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+        <!-- ===================================================== -->
+        <!-- SECTION LABEL                                          -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="16dp"
+                android:background="#4F8CFF" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="NOVA SKINS"
+                android:textColor="#A8B4CE"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✦"
+                android:textColor="#8B5CF6"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <!-- ===================================================== -->
+        <!-- CLASSIC NOVA                                           -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/defaultCard"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:layout_marginTop="11dp"
+            app:cardBackgroundColor="#101728"
+            app:cardCornerRadius="21dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#2A3550"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <!-- AVATAR -->
+
+                <FrameLayout
+                    android:id="@+id/defaultAvatarContainer"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/cosmetic_ring_classic"
+                    android:padding="4dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circle_avatar"
+                        android:clipToOutline="true">
+
+                        <ImageView
+                            android:id="@+id/defaultAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/msgif"
+                            android:scaleType="centerCrop" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+                <!-- INFO -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/defaultName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Classic Nova"
+                        android:textColor="#F5F7FF"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/defaultStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="FREE"
+                        android:textColor="#6EA8FF"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Standard companion"
+                        android:textColor="#626D89"
+                        android:textSize="9sp" />
+
+                </LinearLayout>
+
+
+                <!-- ACTION -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/defaultSkinButton"
+                    android:layout_width="92dp"
+                    android:layout_height="44dp"
+                    android:text="EQUIP"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.06"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:backgroundTint="#4F8CFF"
+                    app:cornerRadius="13dp"
+                    app:strokeColor="#6EA8FF"
+                    app:strokeWidth="1dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ===================================================== -->
+        <!-- NEON NOVA                                              -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/neonCard"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="#101728"
+            app:cardCornerRadius="21dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#2A3550"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <!-- AVATAR -->
+
+                <FrameLayout
+                    android:id="@+id/neonAvatarContainer"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/cosmetic_ring_neon"
+                    android:padding="4dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circle_avatar"
+                        android:clipToOutline="true">
+
+                        <ImageView
+                            android:id="@+id/neonAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/msgif2"
+                            android:scaleType="centerCrop" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+                <!-- INFO -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/neonName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Neon Nova"
+                        android:textColor="#F5F7FF"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/neonStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="250 COINS"
+                        android:textColor="#5FD9FF"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Enhanced neon identity"
+                        android:textColor="#626D89"
+                        android:textSize="9sp" />
+
+                </LinearLayout>
+
+
+                <!-- ACTION -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/neonSkinButton"
+                    android:layout_width="92dp"
+                    android:layout_height="44dp"
+                    android:text="250 ◈"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.04"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:backgroundTint="#16283B"
+                    app:cornerRadius="13dp"
+                    app:strokeColor="#00B8D4"
+                    app:strokeWidth="1dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ===================================================== -->
+        <!-- SOLAR NOVA                                             -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/solarCard"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="#101728"
+            app:cardCornerRadius="21dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#2A3550"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <!-- AVATAR -->
+
+                <FrameLayout
+                    android:id="@+id/solarAvatarContainer"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/cosmetic_ring_solar"
+                    android:padding="4dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circle_avatar"
+                        android:clipToOutline="true">
+
+                        <ImageView
+                            android:id="@+id/solarAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/msgif3"
+                            android:scaleType="centerCrop" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+                <!-- INFO -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/solarName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Solar Nova"
+                        android:textColor="#F5F7FF"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/solarStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="700 COINS"
+                        android:textColor="#B49AFF"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Premium cosmic identity"
+                        android:textColor="#626D89"
+                        android:textSize="9sp" />
+
+                </LinearLayout>
+
+
+                <!-- ACTION -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/solarSkinButton"
+                    android:layout_width="92dp"
+                    android:layout_height="44dp"
+                    android:text="700 ◈"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.04"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:backgroundTint="#211B3B"
+                    app:cornerRadius="13dp"
+                    app:strokeColor="#8B5CF6"
+                    app:strokeWidth="1dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ===================================================== -->
+        <!-- FOOTER                                                 -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="MORE NOVA IDENTITIES COMING SOON"
+            android:textColor="#4F5B75"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.16" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

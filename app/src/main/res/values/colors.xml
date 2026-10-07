@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#0B0D17</color>
+    <color name="window_background">#060914</color>
+    <color name="primary">#8B7CFF</color>
+    <color name="primary_dark">#6D5CE7</color>
+    <color name="blue">#4F8CFF</color>
+
+    <color name="surface">#151827</color>
+    <color name="surface_variant">#1D2032</color>
+
+    <color name="text_primary">#F7F7FB</color>
+    <color name="text_secondary">#A5A8BC</color>
+
+    <color name="border">#2A2E43</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- NOVA design system: restrained neon over deep space surfaces. -->
+    <color name="surface_elevated">#171C30</color>
+    <color name="surface_action">#1D2540</color>
+    <color name="surface_pressed">#252F4F</color>
+    <color name="primary_glow">#2E6CFF</color>
+    <color name="accent">#A78BFA</color>
+    <color name="success">#67D7A4</color>
+    <color name="warning">#F6C85F</color>
+    <color name="error">#EB74A4</color>
+    <color name="scrim">#D9070A16</color>
+    <color name="divider">#26334E</color>
+
+</resources>

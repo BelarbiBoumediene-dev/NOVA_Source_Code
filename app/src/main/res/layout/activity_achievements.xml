@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background">
+
+    <!-- ========================================================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================================================= -->
+
+    <ImageView
+        android:id="@+id/gameBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/plantwo"
+        android:scaleType="centerCrop"
+        android:alpha="0.16"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Dark cinematic overlay -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E8060914"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ========================================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================================================= -->
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- ===================================================== -->
+        <!-- HEADER -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="18dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Achievements"
+                    android:textColor="#F7F8FF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="YOUR LEGEND STARTS HERE"
+                    android:textColor="#6EA8FF"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.16" />
+
+            </LinearLayout>
+
+            <!-- Trophy emblem -->
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_game_icon_button"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="🏆"
+                    android:textSize="24sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <!-- ===================================================== -->
+        <!-- PROGRESS CARD -->
+        <!-- ===================================================== -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#101629"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#293653"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Card top row -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ACHIEVEMENT HALL"
+                            android:textColor="#A78BFA"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.16" />
+
+                        <TextView
+                            android:id="@+id/achievementProgressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="0 / 10 UNLOCKED"
+                            android:textColor="#F7F8FF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/achievementPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="#6EA8FF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <!-- Progress -->
+
+                <ProgressBar
+                    android:id="@+id/achievementProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:layout_marginTop="19dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:indeterminate="false"
+                    android:progressTint="#4F8CFF"
+                    android:progressBackgroundTint="#252F48" />
+
+
+                <!-- Footer -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:background="#8B5CF6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="COMPLETE QUESTS"
+                        android:textColor="#78839F"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.06" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EARN REWARDS"
+                        android:textColor="#A78BFA"
+                        android:textSize="9sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.04" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ===================================================== -->
+        <!-- SECTION HEADER -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="12dp">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="#4F8CFF" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="YOUR TROPHIES"
+                android:textColor="#F5F7FF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLLECTION"
+                android:textColor="#626D89"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08" />
+
+        </LinearLayout>
+
+
+        <!-- ===================================================== -->
+        <!-- ACHIEVEMENTS SCROLL -->
+        <!-- ===================================================== -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- ================================================= -->
+                <!-- EMPTY STATE -->
+                <!-- ================================================= -->
+
+                <LinearLayout
+                    android:id="@+id/emptyState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="38dp"
+                    android:paddingBottom="42dp"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:background="@drawable/bg_game_icon_button"
+                        android:elevation="2dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="🏆"
+                            android:textSize="44sp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/emptyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:text="NO TROPHIES YET"
+                        android:textColor="#F5F7FF"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.08" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:gravity="center"
+                        android:text="Your legend is waiting to be written.\nComplete your first quest to begin."
+                        android:textColor="#78839F"
+                        android:textSize="13sp"
+                        android:lineSpacingExtra="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/bg_game_icon_button"
+                        android:text="✦  BEGIN YOUR JOURNEY"
+                        android:textColor="#6EA8FF"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.08" />
+
+                </LinearLayout>
+
+
+                <!-- ================================================= -->
+                <!-- DYNAMIC ACHIEVEMENTS -->
+                <!-- ================================================= -->
+
+                <LinearLayout
+                    android:id="@+id/achievementsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <!-- ========================================================= -->
+    <!-- FIXED BOTTOM NAVIGATION -->
+    <!-- ========================================================= -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="12dp"
+        app:cardBackgroundColor="#0C1120"
+        app:cardCornerRadius="24dp"
+        app:strokeColor="#263451"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <!-- ================================================= -->
+            <!-- HOME -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:id="@+id/navHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_home"
+                    android:contentDescription="Home"
+                    android:scaleType="fitCenter"
+                    android:tint="#626D89" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="HOME"
+                    android:textColor="#626D89"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- JOURNEYS -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:id="@+id/navJourneys"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_journeys"
+                    android:contentDescription="Journeys"
+                    android:scaleType="fitCenter"
+                    android:tint="#626D89" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="JOURNEYS"
+                    android:textColor="#626D89"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.04" />
+
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- TROPHIES - ACTIVE -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:id="@+id/navAchievements"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_trophy"
+                    android:contentDescription="Trophies"
+                    android:scaleType="fitCenter"
+                    android:tint="#6EA8FF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="TROPHIES"
+                    android:textColor="#6EA8FF"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.04" />
+
+            </LinearLayout>
+
+
+            <!-- ================================================= -->
+            <!-- NOVA -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:id="@+id/navNova"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_crown"
+                    android:contentDescription="Nova"
+                    android:scaleType="fitCenter"
+                    android:tint="#626D89" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Rank"
+                    android:textColor="#626D89"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

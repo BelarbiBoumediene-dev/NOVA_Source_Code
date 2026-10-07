@@ -1,0 +1,269 @@
+{"kind":"deck","id":"pr/n1ug5o","name":"Deck"}
+{"kind":"layout","layoutId":"4cca0ce5-8b9e-425d-bacf-a69b0e00e6c6","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"83bb9c86-1c70-4ba9-93c4-1849bc1425fa","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/spm2a5","slide":1,"title":"NOVA","textShapes":11}
+{"kind":"shape","id":"sh/s729gru9","slide":1,"bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/76tsn6do","slide":1,"text":"NOVA","textPreview":"NOVA","textChars":4,"textLines":1,"bbox":[72,102,360,72]}
+{"kind":"textbox","id":"sh/65kre1c3","slide":1,"text":"AI QUEST","textPreview":"AI QUEST","textChars":8,"textLines":1,"bbox":[72,172,420,56]}
+{"kind":"textbox","id":"sh/5kbqlwvi","slide":1,"text":"Turn your learning goal into a quest.","textPreview":"Turn your learning goal into a quest.","textChars":37,"textLines":1,"bbox":[72,251,620,45]}
+{"kind":"shape","id":"sh/kj29crud","slide":1,"bbox":[72,337,630,2]}
+{"kind":"textbox","id":"sh/jit8jmds","slide":1,"text":"Android app prototype for","textPreview":"Android app prototype for","textChars":25,"textLines":1,"bbox":[72,368,420,28]}
+{"kind":"textbox","id":"sh/ihkrahc7","slide":1,"text":"CLOCK IN: Solana Mobile Hackathon 2026","textPreview":"CLOCK IN: Solana Mobile Hackathon 2026","textChars":38,"textLines":1,"bbox":[72,402,720,32]}
+{"kind":"textbox","id":"sh/xgrqhcvm","slide":1,"text":"Personalized learning journeys, game-like progress, and a Seeker Daily Quest on Solana Devnet.","textPreview":"Personalized learning journeys, game-like progress, and a Seeker Daily Quest on Solana Devnet.","textChars":94,"textLines":1,"bbox":[72,485,580,70]}
+{"kind":"shape","id":"sh/wfi987u1","slide":1,"bbox":[826,108,290,290]}
+{"kind":"textbox","id":"sh/y1c7m1oz","slide":1,"text":"✦","textPreview":"✦","textChars":1,"textLines":1,"bbox":[875,130,190,120]}
+{"kind":"textbox","id":"sh/z2lovmpk","slide":1,"text":"NOVA","textPreview":"NOVA","textChars":4,"textLines":1,"bbox":[850,276,240,40]}
+{"kind":"textbox","id":"sh/03upor65","slide":1,"text":"AI QUEST","textPreview":"AI QUEST","textChars":8,"textLines":1,"bbox":[850,319,240,28]}
+{"kind":"textbox","id":"sh/l436xw7q","slide":1,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/qxsniho3","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/spm2a5","slide":1,"text":"Sources: project source code and resources. Hackathon naming and context: https://solanamobile.com/blog/clock-in-the-solana-mobile-hackathon"}
+{"kind":"slide","id":"sl/6hcshr","slide":2,"title":"02","textShapes":9}
+{"kind":"textbox","id":"sh/07u9w3ap","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/z6lsnytk","slide":2,"text":"The learning-path problem","textPreview":"The learning-path problem","textChars":25,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/y5crutsz","slide":2,"text":"Product observations, not market statistics","textPreview":"Product observations, not market statistics","textChars":43,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/d4jal8be","slide":2,"bbox":[92,245,10,10]}
+{"kind":"textbox","id":"sh/cja9s3at","slide":2,"text":"A broad learning goal does not automatically become a structured plan.","textPreview":"A broad learning goal does not automatically become a structured plan.","textChars":70,"textLines":1,"bbox":[116,239,946,42]}
+{"kind":"shape","id":"sh/bi1sjyt8","slide":2,"bbox":[92,335,10,10]}
+{"kind":"textbox","id":"sh/qhsrqtsn","slide":2,"text":"Learning content can feel fragmented when progress lacks a visible path.","textPreview":"Learning content can feel fragmented when progress lacks a visible path.","textChars":72,"textLines":1,"bbox":[116,329,946,42]}
+{"kind":"shape","id":"sh/pgjahob2","slide":2,"bbox":[92,425,10,10]}
+{"kind":"textbox","id":"sh/ofa9ojax","slide":2,"text":"Motivation can fall when feedback and progression arrive too late.","textPreview":"Motivation can fall when feedback and progression arrive too late.","textChars":66,"textLines":1,"bbox":[116,419,946,42]}
+{"kind":"textbox","id":"sh/2pczepwr","slide":2,"text":"NOVA frames the learning path as a sequence of quests the learner can see and complete.","textPreview":"NOVA frames the learning path as a sequence of quests the learner can see and complete.","textChars":87,"textLines":1,"bbox":[92,555,1020,35]}
+{"kind":"textbox","id":"sh/3ql07uxc","slide":2,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/4bu1gzex","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/6hcshr","slide":2,"text":"Product framing based on implemented journey, chapter, lesson, quiz and progress flows in the project source."}
+{"kind":"slide","id":"sl/1awfob","slide":3,"title":"03","textShapes":17}
+{"kind":"textbox","id":"sh/sfyh8rq9","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/7epgfm9o","slide":3,"text":"NOVA AI Quest","textPreview":"NOVA AI Quest","textChars":13,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/6dgf6h83","slide":3,"text":"A goal becomes a structured learning journey","textPreview":"A goal becomes a structured learning journey","textChars":44,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/1krylwrq","slide":3,"bbox":[70,285,165,80]}
+{"kind":"textbox","id":"sh/gjihcbq5","slide":3,"text":"Goal","textPreview":"Goal","textChars":4,"textLines":1,"bbox":[85,305,135,42]}
+{"kind":"textbox","id":"sh/fi9gj690","slide":3,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[235,304,28,40]}
+{"kind":"shape","id":"sh/eh0za18f","slide":3,"bbox":[264,285,165,80]}
+{"kind":"textbox","id":"sh/p8rypgr2","slide":3,"text":"AI backend","textPreview":"AI backend","textChars":10,"textLines":1,"bbox":[279,305,135,42]}
+{"kind":"textbox","id":"sh/o7ihgbqh","slide":3,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[429,304,28,40]}
+{"kind":"shape","id":"sh/69w7q98r","slide":3,"bbox":[458,285,165,80]}
+{"kind":"textbox","id":"sh/ra5ojepc","slide":3,"text":"Journey","textPreview":"Journey","textChars":7,"textLines":1,"bbox":[473,305,135,42]}
+{"kind":"textbox","id":"sh/sbypsjqx","slide":3,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[623,304,28,40]}
+{"kind":"shape","id":"sh/dc76lo7i","slide":3,"bbox":[652,285,165,80]}
+{"kind":"textbox","id":"sh/exg7ut8n","slide":3,"text":"Lessons","textPreview":"Lessons","textChars":7,"textLines":1,"bbox":[667,305,135,42]}
+{"kind":"textbox","id":"sh/fyponyp8","slide":3,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[817,304,28,40]}
+{"kind":"shape","id":"sh/0zypw3qt","slide":3,"bbox":[846,285,165,80]}
+{"kind":"textbox","id":"sh/1076p87e","slide":3,"text":"Quizzes","textPreview":"Quizzes","textChars":7,"textLines":1,"bbox":[861,305,135,42]}
+{"kind":"textbox","id":"sh/u1cnip8j","slide":3,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[1011,304,28,40]}
+{"kind":"shape","id":"sh/v2lobup4","slide":3,"bbox":[1040,285,165,80]}
+{"kind":"textbox","id":"sh/zm14jq5w","slide":3,"text":"Progress","textPreview":"Progress","textChars":8,"textLines":1,"bbox":[1055,305,135,42]}
+{"kind":"textbox","id":"sh/yls3a5ob","slide":3,"text":"The Android client sends the goal, level, daily time, and duration to its configured backend. The returned journey contains chapters, lessons, quizzes, and optional challenges.","textPreview":"The Android client sends the goal, level, daily time, and duration to its configured backend. The returned journey contains chapters, les...","textChars":176,"textLines":1,"bbox":[100,475,1040,70]}
+{"kind":"textbox","id":"sh/l8jml0n2","slide":3,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/k7alcv6h","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/1awfob","slide":3,"text":"Sources: MainActivity.kt, GeneratingActivity.kt, GenerateJourneyRequest.kt, ApiService.kt, JourneyResponse.kt, JourneyMapper.kt."}
+{"kind":"slide","id":"sl/o0kpnv","slide":4,"title":"04","textShapes":20}
+{"kind":"textbox","id":"sh/ypknyt4n","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/lsb6983e","slide":4,"text":"How the product works","textPreview":"How the product works","textChars":21,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/kr2503mt","slide":4,"text":"Current user flow","textPreview":"Current user flow","textChars":17,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/7utobil4","slide":4,"bbox":[70,230,165,80]}
+{"kind":"textbox","id":"sh/mtkn2d4z","slide":4,"text":"Sign in","textPreview":"Sign in","textChars":7,"textLines":1,"bbox":[85,250,135,42]}
+{"kind":"textbox","id":"sh/9gv6d83a","slide":4,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[235,249,28,40]}
+{"kind":"shape","id":"sh/8f254nmp","slide":4,"bbox":[264,230,165,80]}
+{"kind":"textbox","id":"sh/vidofilg","slide":4,"text":"Set goal","textPreview":"Set goal","textChars":8,"textLines":1,"bbox":[279,250,135,42]}
+{"kind":"textbox","id":"sh/uh4n6d4v","slide":4,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[429,249,28,40]}
+{"kind":"shape","id":"sh/gzqlkvi9","slide":4,"bbox":[458,230,165,80]}
+{"kind":"textbox","id":"sh/h0z2d0ju","slide":4,"text":"Generate","textPreview":"Generate","textChars":8,"textLines":1,"bbox":[473,250,135,42]}
+{"kind":"textbox","id":"sh/ux83il03","slide":4,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[623,249,28,40]}
+{"kind":"shape","id":"sh/fyhkbq1o","slide":4,"bbox":[652,230,165,80]}
+{"kind":"textbox","id":"sh/4nalofi5","slide":4,"text":"Learn","textPreview":"Learn","textChars":5,"textLines":1,"bbox":[667,250,135,42]}
+{"kind":"textbox","id":"sh/pojmh0jq","slide":4,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[817,249,28,40]}
+{"kind":"shape","id":"sh/2l83m50f","slide":4,"bbox":[846,230,165,80]}
+{"kind":"textbox","id":"sh/3m14fa10","slide":4,"text":"Quiz","textPreview":"Quiz","textChars":4,"textLines":1,"bbox":[861,250,135,42]}
+{"kind":"textbox","id":"sh/cralsfih","slide":4,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[1011,249,28,40]}
+{"kind":"shape","id":"sh/dsjmlkj2","slide":4,"bbox":[1040,230,165,80]}
+{"kind":"textbox","id":"sh/l8f25kb6","slide":4,"text":"Unlock","textPreview":"Unlock","textChars":6,"textLines":1,"bbox":[1055,250,135,42]}
+{"kind":"shape","id":"sh/k76lwfal","slide":4,"bbox":[92,420,10,10]}
+{"kind":"textbox","id":"sh/z6xk3at0","slide":4,"text":"Google sign-in creates the user session.","textPreview":"Google sign-in creates the user session.","textChars":40,"textLines":1,"bbox":[116,414,1026,42]}
+{"kind":"shape","id":"sh/y5o3u5sf","slide":4,"bbox":[92,472,10,10]}
+{"kind":"textbox","id":"sh/9czm9kr2","slide":4,"text":"The learner selects level, daily time, and duration before generation.","textPreview":"The learner selects level, daily time, and duration before generation.","textChars":70,"textLines":1,"bbox":[116,466,1026,42]}
+{"kind":"shape","id":"sh/8bql0fah","slide":4,"bbox":[92,524,10,10]}
+{"kind":"textbox","id":"sh/7ahk7a9c","slide":4,"text":"Passing a lesson quiz marks the lesson complete and updates progress.","textPreview":"Passing a lesson quiz marks the lesson complete and updates progress.","textChars":69,"textLines":1,"bbox":[116,518,1026,42]}
+{"kind":"shape","id":"sh/m983ypsr","slide":4,"bbox":[92,576,10,10]}
+{"kind":"textbox","id":"sh/pgv2x0by","slide":4,"text":"Chapter challenges gate chapter completion when present.","textPreview":"Chapter challenges gate chapter completion when present.","textChars":56,"textLines":1,"bbox":[116,570,1026,42]}
+{"kind":"textbox","id":"sh/ofmlovad","slide":4,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/elkzy18b","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/o0kpnv","slide":4,"text":"Sources: WelcomeActivity.kt, AuthManager.kt, MainActivity.kt, GeneratingActivity.kt, LessonActivity.kt, QuizActivity.kt, ResultActivity.kt, ChallengeActivity.kt."}
+{"kind":"slide","id":"sl/2mhrdo","slide":5,"title":"05","textShapes":16}
+{"kind":"textbox","id":"sh/ojyd0fqp","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/nipcra94","slide":5,"text":"AI-powered personalization","textPreview":"AI-powered personalization","textChars":26,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/2hgvy58j","slide":5,"text":"The current backend generates the learning structure","textPreview":"The current backend generates the learning structure","textChars":52,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/xoruxkr6","slide":5,"bbox":[90,235,470,250]}
+{"kind":"textbox","id":"sh/cnid4fq1","slide":5,"text":"INPUTS","textPreview":"INPUTS","textChars":6,"textLines":1,"bbox":[120,270,180,25]}
+{"kind":"shape","id":"sh/bm9cva9g","slide":5,"bbox":[125,318,10,10]}
+{"kind":"textbox","id":"sh/al0v258v","slide":5,"text":"Learning goal","textPreview":"Learning goal","textChars":13,"textLines":1,"bbox":[149,312,296,42]}
+{"kind":"shape","id":"sh/lcre14ri","slide":5,"bbox":[125,360,10,10]}
+{"kind":"textbox","id":"sh/kbid8zqx","slide":5,"text":"Level","textPreview":"Level","textChars":5,"textLines":1,"bbox":[149,354,296,42]}
+{"kind":"shape","id":"sh/uxwvydsj","slide":5,"bbox":[125,402,10,10]}
+{"kind":"textbox","id":"sh/vy5cri94","slide":5,"text":"Daily time","textPreview":"Daily time","textChars":10,"textLines":1,"bbox":[149,396,296,42]}
+{"kind":"shape","id":"sh/gzed0na9","slide":5,"bbox":[125,444,10,10]}
+{"kind":"textbox","id":"sh/h0netsru","slide":5,"text":"Duration","textPreview":"Duration","textChars":8,"textLines":1,"bbox":[149,438,296,42]}
+{"kind":"shape","id":"sh/i1wv2xsf","slide":5,"bbox":[700,235,470,250]}
+{"kind":"textbox","id":"sh/3m5wv290","slide":5,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[730,270,180,25]}
+{"kind":"shape","id":"sh/4ned47al","slide":5,"bbox":[735,318,10,10]}
+{"kind":"textbox","id":"sh/5onexsr6","slide":5,"text":"Journey title and description","textPreview":"Journey title and description","textChars":29,"textLines":1,"bbox":[759,312,321,42]}
+{"kind":"shape","id":"sh/y5svqtsb","slide":5,"bbox":[735,360,10,10]}
+{"kind":"textbox","id":"sh/j6lcjy9w","slide":5,"text":"Chapters and lessons","textPreview":"Chapters and lessons","textChars":20,"textLines":1,"bbox":[759,354,321,42]}
+{"kind":"shape","id":"sh/nahsrupo","slide":5,"bbox":[735,402,10,10]}
+{"kind":"textbox","id":"sh/m98ryp83","slide":5,"text":"Quiz questions","textPreview":"Quiz questions","textChars":14,"textLines":1,"bbox":[759,396,321,42]}
+{"kind":"shape","id":"sh/9czat47e","slide":5,"bbox":[735,444,10,10]}
+{"kind":"textbox","id":"sh/obq90zqt","slide":5,"text":"Optional chapter challenge","textPreview":"Optional chapter challenge","textChars":26,"textLines":1,"bbox":[759,438,321,42]}
+{"kind":"textbox","id":"sh/f6xsnupc","slide":5,"text":"The source code identifies this component only as an AI-powered backend. It does not identify a model provider or claim autonomous tutoring.","textPreview":"The source code identifies this component only as an AI-powered backend. It does not identify a model provider or claim autonomous tutoring.","textChars":140,"textLines":1,"bbox":[90,550,1060,42]}
+{"kind":"textbox","id":"sh/e5orup8r","slide":5,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/18zapk7i","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/2mhrdo","slide":5,"text":"Sources: RetrofitInstance.kt, ApiService.kt, GenerateJourneyRequest.kt, JourneyResponse.kt. No model/provider is named in the inspected client source."}
+{"kind":"slide","id":"sl/5awpdm","slide":6,"title":"06","textShapes":17}
+{"kind":"textbox","id":"sh/47ads3qt","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/361cji9o","slide":6,"text":"Game-like progress","textPreview":"Game-like progress","textChars":18,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/i5svqd83","slide":6,"text":"Implemented systems make learning state visible","textPreview":"Implemented systems make learning state visible","textChars":47,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/h4juh8ri","slide":6,"bbox":[72,220,340,145]}
+{"kind":"textbox","id":"sh/gjqdo3qx","slide":6,"text":"XP & levels","textPreview":"XP & levels","textChars":11,"textLines":1,"bbox":[94,240,290,28]}
+{"kind":"textbox","id":"sh/vihcfy9c","slide":6,"text":"Correct answers add XP. Total XP determines level.","textPreview":"Correct answers add XP. Total XP determines level.","textChars":50,"textLines":1,"bbox":[94,278,290,62]}
+{"kind":"shape","id":"sh/uh8vmt8r","slide":6,"bbox":[454,220,340,145]}
+{"kind":"textbox","id":"sh/103etsrm","slide":6,"text":"Coins","textPreview":"Coins","textChars":5,"textLines":1,"bbox":[476,240,290,28]}
+{"kind":"textbox","id":"sh/0zud0nq1","slide":6,"text":"Passing quizzes and completing the verified daily quest can add Coins.","textPreview":"Passing quizzes and completing the verified daily quest can add Coins.","textChars":70,"textLines":1,"bbox":[476,278,290,62]}
+{"kind":"shape","id":"sh/ax432xgf","slide":6,"bbox":[836,220,340,145]}
+{"kind":"textbox","id":"sh/vyd4b2xk","slide":6,"text":"Achievements","textPreview":"Achievements","textChars":12,"textLines":1,"bbox":[858,240,290,28]}
+{"kind":"textbox","id":"sh/wzm547e5","slide":6,"text":"Completion milestones are stored in Firestore and can trigger notifications.","textPreview":"Completion milestones are stored in Firestore and can trigger notifications.","textChars":76,"textLines":1,"bbox":[858,278,290,62]}
+{"kind":"shape","id":"sh/x0vmdcfq","slide":6,"bbox":[72,405,340,145]}
+{"kind":"textbox","id":"sh/m9k3yxg3","slide":6,"text":"Journey map","textPreview":"Journey map","textChars":11,"textLines":1,"bbox":[94,425,290,28]}
+{"kind":"textbox","id":"sh/nut47ixo","slide":6,"text":"Lessons, challenges, and chapter gates control progression.","textPreview":"Lessons, challenges, and chapter gates control progression.","textChars":59,"textLines":1,"bbox":[94,463,290,62]}
+{"kind":"shape","id":"sh/ovml0ny9","slide":6,"bbox":[454,405,340,145]}
+{"kind":"textbox","id":"sh/9wvm9sfu","slide":6,"text":"Leaderboard","textPreview":"Leaderboard","textChars":11,"textLines":1,"bbox":[476,425,290,28]}
+{"kind":"textbox","id":"sh/65onahwn","slide":6,"text":"Weekly XP powers a Firestore-backed ranking.","textPreview":"Weekly XP powers a Firestore-backed ranking.","textChars":44,"textLines":1,"bbox":[476,463,290,62]}
+{"kind":"shape","id":"sh/7qx4jmxs","slide":6,"bbox":[836,405,340,145]}
+{"kind":"textbox","id":"sh/3ypsfu98","slide":6,"text":"Cosmetics","textPreview":"Cosmetics","textChars":9,"textLines":1,"bbox":[858,425,290,28]}
+{"kind":"textbox","id":"sh/ixwrmpsn","slide":6,"text":"Coins unlock and equip Nova visual themes.","textPreview":"Coins unlock and equip Nova visual themes.","textChars":42,"textLines":1,"bbox":[858,463,290,62]}
+{"kind":"textbox","id":"sh/507ahkre","slide":6,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/4zytofat","slide":6,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/5awpdm","slide":6,"text":"Sources: ProgressManager.kt, FirebaseProgressManager.kt, AchievementsActivity.kt, LeaderboardActivity.kt, CosmeticsActivity.kt."}
+{"kind":"slide","id":"sl/u4vc5z","slide":7,"title":"07","textShapes":16}
+{"kind":"textbox","id":"sh/18f65wj2","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/el47ahkb","slide":7,"text":"Seeker Daily Quest","textPreview":"Seeker Daily Quest","textChars":18,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/f6xo3mlw","slide":7,"text":"A wallet verification unlocks an in-product daily quest","textPreview":"A wallet verification unlocks an in-product daily quest","textChars":55,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/ob6pgr2d","slide":7,"bbox":[70,275,165,80]}
+{"kind":"textbox","id":"sh/pcf69wjy","slide":7,"text":"Verify wallet","textPreview":"Verify wallet","textChars":13,"textLines":1,"bbox":[85,295,135,42]}
+{"kind":"textbox","id":"sh/29o7e1kn","slide":7,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[235,294,28,40]}
+{"kind":"shape","id":"sh/naxo7618","slide":7,"bbox":[264,275,165,80]}
+{"kind":"textbox","id":"sh/4fmp4729","slide":7,"text":"Devnet transaction","textPreview":"Devnet transaction","textChars":18,"textLines":1,"bbox":[279,295,135,42]}
+{"kind":"textbox","id":"sh/5gv6xc3u","slide":7,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[429,294,28,40]}
+{"kind":"shape","id":"sh/5oneh8vm","slide":7,"bbox":[458,275,165,80]}
+{"kind":"textbox","id":"sh/4nedo3e1","slide":7,"text":"Store proof","textPreview":"Store proof","textChars":11,"textLines":1,"bbox":[473,295,135,42]}
+{"kind":"textbox","id":"sh/jm5wfydg","slide":7,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[623,294,28,40]}
+{"kind":"shape","id":"sh/ilwvmtwb","slide":7,"bbox":[652,275,165,80]}
+{"kind":"textbox","id":"sh/ts7elsvy","slide":7,"text":"Pass a quiz","textPreview":"Pass a quiz","textChars":11,"textLines":1,"bbox":[667,295,135,42]}
+{"kind":"textbox","id":"sh/sryxsned","slide":7,"text":"›","textPreview":"›","textChars":1,"textLines":1,"bbox":[817,294,28,40]}
+{"kind":"shape","id":"sh/rqpwjids","slide":7,"bbox":[846,275,165,80]}
+{"kind":"textbox","id":"sh/6pgfqdw7","slide":7,"text":"+5 Coins daily","textPreview":"+5 Coins daily","textChars":14,"textLines":1,"bbox":[861,295,135,42]}
+{"kind":"textbox","id":"sh/1grepsvu","slide":7,"text":"The app connects through Solana Mobile Wallet Adapter, builds a Solana Devnet transaction for the identity flow, then stores the wallet address and transaction signature in Firestore. A verified user can receive 5 in-app Coins once per day after a qualifying quiz.","textPreview":"The app connects through Solana Mobile Wallet Adapter, builds a Solana Devnet transaction for the identity flow, then stores the wallet a...","textChars":264,"textLines":1,"bbox":[92,465,1085,86]}
+{"kind":"textbox","id":"sh/0vyxwne9","slide":7,"text":"No NFT, token reward, SKR integration, or on-chain achievement claim is made here.","textPreview":"No NFT, token reward, SKR integration, or on-chain achievement claim is made here.","textChars":82,"textLines":1,"bbox":[92,574,1000,30]}
+{"kind":"textbox","id":"sh/kbqp8vqx","slide":7,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/lczqh07i","slide":7,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/u4vc5z","slide":7,"text":"Sources: SeekerQuestActivity.kt, SolanaAchievementManager.kt, FirebaseProgressManager.kt. Solana Devnet is explicitly configured in code."}
+{"kind":"slide","id":"sl/x48dgm","slide":8,"title":"08","textShapes":22}
+{"kind":"textbox","id":"sh/mlw7e1gz","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/987q9gza","slide":8,"text":"Product experience","textPreview":"Product experience","textChars":18,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/o7epgby5","slide":8,"text":"The prototype uses a cohesive dark, game-inspired interface","textPreview":"The prototype uses a cohesive dark, game-inspired interface","textChars":59,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/bap8bqhg","slide":8,"bbox":[72,215,238,285]}
+{"kind":"shape","id":"sh/a9g7ilgv","slide":8,"bbox":[100,245,182,135]}
+{"kind":"textbox","id":"sh/xc7qdgzm","slide":8,"text":"NOVA","textPreview":"NOVA","textChars":4,"textLines":1,"bbox":[127,276,130,26]}
+{"kind":"textbox","id":"sh/wbypkvy1","slide":8,"text":"✦","textPreview":"✦","textChars":1,"textLines":1,"bbox":[148,312,85,55]}
+{"kind":"textbox","id":"sh/jep8fqhs","slide":8,"text":"Home","textPreview":"Home","textChars":4,"textLines":1,"bbox":[95,407,190,28]}
+{"kind":"textbox","id":"sh/ydg7mlg7","slide":8,"text":"Goal input, player stats, Seeker Quest, cosmetics","textPreview":"Goal input, player stats, Seeker Quest, cosmetics","textChars":49,"textLines":1,"bbox":[95,443,190,44]}
+{"kind":"shape","id":"sh/grul8ret","slide":8,"bbox":[357,215,238,285]}
+{"kind":"shape","id":"sh/hs3m1wfe","slide":8,"bbox":[385,245,182,135]}
+{"kind":"textbox","id":"sh/upc36hw3","slide":8,"text":"NOVA","textPreview":"NOVA","textChars":4,"textLines":1,"bbox":[412,276,130,26]}
+{"kind":"textbox","id":"sh/vql4zmx8","slide":8,"text":"✦","textPreview":"✦","textChars":1,"textLines":1,"bbox":[433,312,85,55]}
+{"kind":"textbox","id":"sh/4felcre5","slide":8,"text":"Journey","textPreview":"Journey","textChars":7,"textLines":1,"bbox":[380,407,190,28]}
+{"kind":"textbox","id":"sh/pgnm5wfq","slide":8,"text":"Chapter map and progress","textPreview":"Chapter map and progress","textChars":24,"textLines":1,"bbox":[380,443,190,44]}
+{"kind":"shape","id":"sh/2tw3a1wz","slide":8,"bbox":[642,215,238,285]}
+{"kind":"shape","id":"sh/3e5436xk","slide":8,"bbox":[670,245,182,135]}
+{"kind":"textbox","id":"sh/cjelgbe1","slide":8,"text":"NOVA","textPreview":"NOVA","textChars":4,"textLines":1,"bbox":[697,276,130,26]}
+{"kind":"textbox","id":"sh/dknm9gvm","slide":8,"text":"✦","textPreview":"✦","textChars":1,"textLines":1,"bbox":[718,312,85,55]}
+{"kind":"textbox","id":"sh/1ojudcje","slide":8,"text":"Quiz","textPreview":"Quiz","textChars":4,"textLines":1,"bbox":[665,407,190,28]}
+{"kind":"textbox","id":"sh/0nad4729","slide":8,"text":"Question feedback and explanation","textPreview":"Question feedback and explanation","textChars":33,"textLines":1,"bbox":[665,443,190,44]}
+{"kind":"shape","id":"sh/z2hcb21o","slide":8,"bbox":[927,215,238,285]}
+{"kind":"shape","id":"sh/e18b2xk3","slide":8,"bbox":[955,245,182,135]}
+{"kind":"textbox","id":"sh/9sjuhwjq","slide":8,"text":"NOVA","textPreview":"NOVA","textChars":4,"textLines":1,"bbox":[982,276,130,26]}
+{"kind":"textbox","id":"sh/orad8r25","slide":8,"text":"✦","textPreview":"✦","textChars":1,"textLines":1,"bbox":[1003,312,85,55]}
+{"kind":"textbox","id":"sh/nq1cfm1k","slide":8,"text":"Achievements","textPreview":"Achievements","textChars":12,"textLines":1,"bbox":[950,407,190,28]}
+{"kind":"textbox","id":"sh/mpsv6hkz","slide":8,"text":"Milestones and wallet verification action","textPreview":"Milestones and wallet verification action","textChars":41,"textLines":1,"bbox":[950,443,190,44]}
+{"kind":"textbox","id":"sh/5wzu5s3m","slide":8,"text":"Illustrative screen representations based on the app’s implemented layouts and branding resources. No runtime screenshots were available in the project files.","textPreview":"Illustrative screen representations based on the app’s implemented layouts and branding resources. No runtime screenshots were available ...","textChars":158,"textLines":1,"bbox":[72,568,1100,34]}
+{"kind":"textbox","id":"sh/4vqtwn21","slide":8,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/u14r6t0j","slide":8,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/x48dgm","slide":8,"text":"Sources: activity_main.xml, activity_journey.xml, activity_quiz.xml, activity_achievements.xml and drawable resources. This slide intentionally does not represent the mockups as screenshots."}
+{"kind":"slide","id":"sl/qazhld","slide":9,"title":"09","textShapes":11}
+{"kind":"textbox","id":"sh/apwbm5oj","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/xc7uxk7u","slide":9,"text":"Technology","textPreview":"Technology","textChars":10,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/wbytof69","slide":9,"text":"Verified client-side stack","textPreview":"Verified client-side stack","textChars":26,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/nm5crqps","slide":9,"bbox":[82,240,330,250]}
+{"kind":"textbox","id":"sh/mlwbilo7","slide":9,"text":"Android client","textPreview":"Android client","textChars":14,"textLines":1,"bbox":[107,275,275,32]}
+{"kind":"textbox","id":"sh/9onut07y","slide":9,"text":"Kotlin\nAndroid SDK\nMaterial Components\nCoroutines","textPreview":"Kotlin | Android SDK | Material Components | Coroutines","textChars":49,"textLines":4,"bbox":[107,335,270,112]}
+{"kind":"shape","id":"sh/8netkv6d","slide":9,"bbox":[472,240,330,250]}
+{"kind":"textbox","id":"sh/ri9c3upw","slide":9,"text":"Data and network","textPreview":"Data and network","textChars":16,"textLines":1,"bbox":[497,275,275,32]}
+{"kind":"textbox","id":"sh/6hgvupob","slide":9,"text":"Firebase Authentication\nCloud Firestore\nCredential Manager\nRetrofit and Gson","textPreview":"Firebase Authentication | Cloud Firestore | Credential Manager | Retrofit and Gson","textChars":76,"textLines":4,"bbox":[497,335,270,112]}
+{"kind":"shape","id":"sh/svaxsf2t","slide":9,"bbox":[862,240,330,250]}
+{"kind":"textbox","id":"sh/twjelkje","slide":9,"text":"Media and Solana","textPreview":"Media and Solana","textChars":16,"textLines":1,"bbox":[887,275,275,32]}
+{"kind":"textbox","id":"sh/6t8fq5k3","slide":9,"text":"Glide\nSolana Mobile Wallet Adapter\nSolana RPC on Devnet","textPreview":"Glide | Solana Mobile Wallet Adapter | Solana RPC on Devnet","textChars":55,"textLines":3,"bbox":[887,335,270,112]}
+{"kind":"textbox","id":"sh/7uhwja1o","slide":9,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/krqdov2x","slide":9,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/qazhld","slide":9,"text":"Sources: app/build.gradle.kts, AuthManager.kt, RetrofitInstance.kt, SolanaAchievementManager.kt."}
+{"kind":"slide","id":"sl/p2akk8","slide":10,"title":"010","textShapes":15}
+{"kind":"textbox","id":"sh/h47mpgfa","slide":10,"text":"010","textPreview":"010","textChars":3,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/u1gnu1gj","slide":10,"text":"Implementation snapshot","textPreview":"Implementation snapshot","textChars":23,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/f2p4n6x4","slide":10,"text":"What exists in the current Android prototype","textPreview":"What exists in the current Android prototype","textChars":44,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/szy5sryt","slide":10,"bbox":[72,210,520,350]}
+{"kind":"textbox","id":"sh/t07mlwfy","slide":10,"text":"IMPLEMENTED","textPreview":"IMPLEMENTED","textChars":11,"textLines":1,"bbox":[102,245,250,30]}
+{"kind":"shape","id":"sh/6xg3q1gn","slide":10,"bbox":[110,305,10,10]}
+{"kind":"textbox","id":"sh/7yp4jmx8","slide":10,"text":"Google authentication and Firestore-backed user data","textPreview":"Google authentication and Firestore-backed user data","textChars":52,"textLines":1,"bbox":[134,299,396,42]}
+{"kind":"shape","id":"sh/cvi54vyx","slide":10,"bbox":[110,361,10,10]}
+{"kind":"textbox","id":"sh/dwbmx0fi","slide":10,"text":"Generated journeys with lessons, quizzes, and challenges","textPreview":"Generated journeys with lessons, quizzes, and challenges","textChars":56,"textLines":1,"bbox":[134,355,396,42]}
+{"kind":"shape","id":"sh/9cf69g3m","slide":10,"bbox":[110,417,10,10]}
+{"kind":"textbox","id":"sh/ob650bm1","slide":10,"text":"XP, Coins, levels, achievements, cosmetics, and leaderboard","textPreview":"XP, Coins, levels, achievements, cosmetics, and leaderboard","textChars":59,"textLines":1,"bbox":[134,411,396,42]}
+{"kind":"shape","id":"sh/nax476lw","slide":10,"bbox":[110,473,10,10]}
+{"kind":"textbox","id":"sh/m9ony14b","slide":10,"text":"Solana wallet verification plus the Devnet Seeker Daily Quest","textPreview":"Solana wallet verification plus the Devnet Seeker Daily Quest","textChars":61,"textLines":1,"bbox":[134,467,396,42]}
+{"kind":"shape","id":"sh/18fm5w3q","slide":10,"bbox":[680,210,520,350]}
+{"kind":"textbox","id":"sh/0765wrm5","slide":10,"text":"NOT CLAIMED AS IMPLEMENTED","textPreview":"NOT CLAIMED AS IMPLEMENTED","textChars":26,"textLines":1,"bbox":[710,245,390,30]}
+{"kind":"shape","id":"sh/z6d436lk","slide":10,"bbox":[718,305,10,10]}
+{"kind":"textbox","id":"sh/e54nu14z","slide":10,"text":"NFTs or token rewards","textPreview":"NFTs or token rewards","textChars":21,"textLines":1,"bbox":[742,299,386,42]}
+{"kind":"shape","id":"sh/l4z6103u","slide":10,"bbox":[718,361,10,10]}
+{"kind":"textbox","id":"sh/k3q58vm9","slide":10,"text":"SKR integration","textPreview":"SKR integration","textChars":15,"textLines":1,"bbox":[742,355,386,42]}
+{"kind":"shape","id":"sh/4jihk3yx","slide":10,"bbox":[718,417,10,10]}
+{"kind":"textbox","id":"sh/pkryt8fi","slide":10,"text":"Solana dApp Store publication","textPreview":"Solana dApp Store publication","textChars":29,"textLines":1,"bbox":[742,411,386,42]}
+{"kind":"shape","id":"sh/ix0zitgr","slide":10,"bbox":[718,473,10,10]}
+{"kind":"textbox","id":"sh/3y9gryxc","slide":10,"text":"Measured user traction or performance metrics","textPreview":"Measured user traction or performance metrics","textChars":45,"textLines":1,"bbox":[742,467,386,42]}
+{"kind":"textbox","id":"sh/gvihgjyl","slide":10,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/hwrypof6","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/p2akk8","slide":10,"text":"Sources: implemented project source. The right-hand column reflects features explicitly excluded by the request because they are not verified in code."}
+{"kind":"slide","id":"sl/nbgqcr","slide":11,"title":"011","textShapes":10}
+{"kind":"textbox","id":"sh/l4j65gbe","slide":11,"text":"011","textPreview":"011","textChars":3,"textLines":1,"bbox":[72,44,60,28]}
+{"kind":"textbox","id":"sh/y1snu1cn","slide":11,"text":"Future work","textPreview":"Future work","textChars":11,"textLines":1,"bbox":[72,82,1100,55]}
+{"kind":"textbox","id":"sh/z21436t8","slide":11,"text":"Possible directions, not current product claims","textPreview":"Possible directions, not current product claims","textChars":47,"textLines":1,"bbox":[72,140,1050,40]}
+{"kind":"shape","id":"sh/87u50vu5","slide":11,"bbox":[110,250,10,10]}
+{"kind":"textbox","id":"sh/98369gbq","slide":11,"text":"Richer adaptive learning that responds to learner performance.","textPreview":"Richer adaptive learning that responds to learner performance.","textChars":62,"textLines":1,"bbox":[134,244,936,42]}
+{"kind":"shape","id":"sh/m5snylcz","slide":11,"bbox":[110,324,10,10]}
+{"kind":"textbox","id":"sh/76lo7qtk","slide":11,"text":"Deeper Seeker-native experiences beyond the current verification and daily quest flow.","textPreview":"Deeper Seeker-native experiences beyond the current verification and daily quest flow.","textChars":86,"textLines":1,"bbox":[134,318,936,42]}
+{"kind":"shape","id":"sh/wvu54vu1","slide":11,"bbox":[110,398,10,10]}
+{"kind":"textbox","id":"sh/hw36d0bm","slide":11,"text":"Broader learning content and additional social or community features.","textPreview":"Broader learning content and additional social or community features.","textChars":69,"textLines":1,"bbox":[134,392,936,42]}
+{"kind":"shape","id":"sh/l0f6x4rq","slide":11,"bbox":[110,472,10,10]}
+{"kind":"textbox","id":"sh/kz6pozq5","slide":11,"text":"Additional on-chain utility, subject to product and technical validation.","textPreview":"Additional on-chain utility, subject to product and technical validation.","textChars":73,"textLines":1,"bbox":[134,466,936,42]}
+{"kind":"textbox","id":"sh/zyxovu9k","slide":11,"text":"These items are future directions. They are not presented as implemented capabilities.","textPreview":"These items are future directions. They are not presented as implemented capabilities.","textChars":86,"textLines":1,"bbox":[110,590,960,32]}
+{"kind":"textbox","id":"sh/yxo7mp8z","slide":11,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/9oz61o7m","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/nbgqcr","slide":11,"text":"Future work proposed in the supplied brief; not represented as present functionality."}
+{"kind":"slide","id":"sl/i91qpw","slide":12,"title":"NOVA AI QUEST","textShapes":8}
+{"kind":"shape","id":"sh/p0f6pw3y","slide":12,"bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/2x4nuh47","slide":12,"text":"NOVA AI QUEST","textPreview":"NOVA AI QUEST","textChars":13,"textLines":1,"bbox":[72,156,800,70]}
+{"kind":"textbox","id":"sh/3ydonmls","slide":12,"text":"From a learning goal to a playable journey.","textPreview":"From a learning goal to a playable journey.","textChars":43,"textLines":1,"bbox":[72,245,780,45]}
+{"kind":"textbox","id":"sh/gvm5s7mh","slide":12,"text":"A functional Android learning prototype that combines AI-generated journey structure, visible game-like progress, and a precise Solana Devnet Seeker Daily Quest.","textPreview":"A functional Android learning prototype that combines AI-generated journey structure, visible game-like progress, and a precise Solana De...","textChars":161,"textLines":1,"bbox":[72,355,760,76]}
+{"kind":"textbox","id":"sh/hwv6lc3m","slide":12,"text":"CLOCK IN: Solana Mobile Hackathon 2026","textPreview":"CLOCK IN: Solana Mobile Hackathon 2026","textChars":38,"textLines":1,"bbox":[72,520,680,30]}
+{"kind":"textbox","id":"sh/u94nqh4b","slide":12,"text":"Functional APK  •  GitHub source  •  Demo video  •  Pitch deck","textPreview":"Functional APK  •  GitHub source  •  Demo video  •  Pitch deck","textChars":62,"textLines":1,"bbox":[72,566,700,28]}
+{"kind":"shape","id":"sh/fadojm5w","slide":12,"bbox":[925,168,180,180]}
+{"kind":"textbox","id":"sh/0r6p4bml","slide":12,"text":"✦","textPreview":"✦","textChars":1,"textLines":1,"bbox":[958,205,115,80]}
+{"kind":"textbox","id":"sh/lsz6xg36","slide":12,"text":"NOVA AI QUEST  |  CLOCK IN 2026","textPreview":"NOVA AI QUEST  |  CLOCK IN 2026","textChars":31,"textLines":1,"bbox":[72,681,350,18]}
+{"kind":"textbox","id":"sh/d8jmlgji","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1170,681,38,18]}
+{"kind":"notes","id":"nt/i91qpw","slide":12,"text":"Product claims: project source. Hackathon submission materials and event facts: https://solanamobile.com/blog/clock-in-the-solana-mobile-hackathon"}

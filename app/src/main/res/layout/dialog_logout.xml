@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="26dp"
+    android:background="@drawable/bg_neon_dialog">
+
+    <!-- EXIT ICON -->
+
+
+    <!-- TITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:text="LOG OUT?"
+        android:textColor="#F5F7FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans"
+        android:letterSpacing="0.04" />
+
+    <!-- ACCENT LINE -->
+
+    <View
+        android:layout_width="46dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        android:background="#8B5CF6" />
+
+    <!-- MESSAGE -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="Are you sure you want to end your current session?"
+        android:textColor="#78839F"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp"
+        android:fontFamily="sans" />
+
+    <!-- ACTIONS -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- CANCEL -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="CANCEL"
+            android:textColor="#A9B5D0"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:fontFamily="sans"
+            android:letterSpacing="0.05"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="#151C30"
+            app:cornerRadius="16dp"
+            app:strokeColor="#283452"
+            app:strokeWidth="1dp"
+            app:rippleColor="#334F8CFF" />
+
+        <!-- LOG OUT -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirmLogoutButton"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="LOG OUT"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:fontFamily="sans"
+            android:letterSpacing="0.05"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="#4F8CFF"
+            app:cornerRadius="16dp"
+            app:strokeColor="#6EA8FF"
+            app:strokeWidth="1dp"
+            app:rippleColor="#66FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

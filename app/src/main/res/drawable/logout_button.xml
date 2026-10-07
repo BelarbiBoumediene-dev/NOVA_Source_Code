@@ -1,0 +1,78 @@
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Outer neon frame -->
+    <path
+        android:fillColor="#FF26303D"
+        android:pathData="
+            M14,2
+            L50,2
+            L62,14
+            L62,50
+            L50,62
+            L14,62
+            L2,50
+            L2,14
+            Z" />
+
+    <!-- Red inner frame -->
+    <path
+        android:fillColor="#6D37F4"
+        android:pathData="
+            M15,5
+            L49,5
+            L59,15
+            L59,49
+            L49,59
+            L15,59
+            L5,49
+            L5,15
+            Z" />
+
+    <!-- Dark center -->
+    <path
+        android:fillColor="#FF0D1119"
+        android:pathData="
+            M17,9
+            L47,9
+            L55,17
+            L55,47
+            L47,55
+            L17,55
+            L9,47
+            L9,17
+            Z" />
+
+    <!-- Inner red accent -->
+    <path
+        android:fillColor="#665719A6"
+        android:pathData="
+            M18,12
+            L46,12
+            L52,18
+            L52,46
+            L46,52
+            L18,52
+            L12,46
+            L12,18
+            Z" />
+
+    <!-- Black center -->
+    <path
+        android:fillColor="#FF111722"
+        android:pathData="
+            M20,15
+            L44,15
+            L49,20
+            L49,44
+            L44,49
+            L20,49
+            L15,44
+            L15,20
+            Z" />
+
+</vector>

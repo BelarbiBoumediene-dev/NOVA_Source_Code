@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Animation.Quizz.Window" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/premium_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/premium_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/premium_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/premium_exit</item>
+    </style>
+
+    <style name="Widget.Quizz.PremiumButton" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:stateListAnimator">@animator/premium_button_state</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="rippleColor">#33FFFFFF</item>
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+
+    <style name="Widget.Quizz.PremiumCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/radius_md</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/divider</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+    </style>
+</resources>

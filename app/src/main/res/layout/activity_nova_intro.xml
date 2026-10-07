@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080B18">
+
+    <!-- ========================================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================================= -->
+
+    <View
+        android:id="@+id/backgroundGlow"
+        android:layout_width="420dp"
+        android:layout_height="420dp"
+        android:alpha="0.22"
+        android:background="@drawable/nova_glow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Decorative top glow -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.35"
+        android:background="#5967FF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- ========================================= -->
+    <!-- GAME HUD -->
+    <!-- ========================================= -->
+
+    <!-- ========================================= -->
+    <!-- NOVA NEON AVATAR -->
+    <!-- ========================================= -->
+
+    <FrameLayout
+        android:id="@+id/novaAvatar"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="68dp"
+        android:padding="9dp"
+        android:background="@drawable/nova_neon_ring"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Nova GIF -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/novaCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Nova"
+            android:scaleType="centerCrop"
+
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+    </FrameLayout>
+
+
+    <!-- ========================================= -->
+    <!-- CHARACTER NAME -->
+    <!-- ========================================= -->
+
+    <LinearLayout
+        android:id="@+id/characterNameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="-2dp"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/nova_name_box"
+
+        app:layout_constraintTop_toBottomOf="@id/novaAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/novaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N O V A"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.25" />
+
+    </LinearLayout>
+
+
+
+    <!-- ========================================= -->
+    <!-- DIALOGUE AREA -->
+    <!-- ========================================= -->
+
+    <ScrollView
+        android:id="@+id/messageScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="8dp"
+
+        android:fillViewport="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+
+        app:layout_constraintTop_toBottomOf="@id/characterNameBox"
+        app:layout_constraintBottom_toTopOf="@id/dialogueArea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/messageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="12dp" />
+
+    </ScrollView>
+
+
+    <!-- ========================================= -->
+    <!-- DIALOGUE / TYPING AREA -->
+    <!-- ========================================= -->
+
+    <LinearLayout
+        android:id="@+id/dialogueArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="10dp"
+
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toTopOf="@id/answerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <!-- TYPING INDICATOR -->
+
+        <LinearLayout
+            android:id="@+id/typingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+
+            android:visibility="gone"
+
+            android:background="@drawable/nova_message">
+
+            <TextView
+                android:id="@+id/typingDots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="●  ●  ●"
+                android:textColor="#8A7CFF"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- ========================================= -->
+    <!-- PLAYER CHOICES -->
+    <!-- ========================================= -->
+
+    <LinearLayout
+        android:id="@+id/answerContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <!-- CHOICE 1 / YES -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/yesButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+
+            android:text="Yes"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            android:gravity="center"
+
+            app:backgroundTint="#315CFF"
+            app:cornerRadius="16dp"
+            app:rippleColor="#667C9CFF"
+
+            app:strokeColor="#687CFF"
+            app:strokeWidth="1dp" />
+
+
+        <!-- CHOICE 2 / NO -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/noButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+
+            android:layout_marginTop="9dp"
+
+            android:text="No"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            android:gravity="center"
+
+            app:backgroundTint="#211B46"
+            app:cornerRadius="16dp"
+            app:rippleColor="#667C9CFF"
+
+            app:strokeColor="#765CFF"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+
+
+    <!-- ========================================= -->
+    <!-- BOTTOM DECORATION -->
+    <!-- ========================================= -->
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.7"
+        android:background="#7B61FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
