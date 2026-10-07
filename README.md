@@ -86,23 +86,6 @@ The Coins system is an **in-app reward mechanism** and is separate from Solana's
 
 ---
 
-## 🧩 Technology Stack
-
-| Technology | Usage |
-|---|---|
-| Kotlin | Android application development |
-| XML | Android UI |
-| Android SDK | Mobile platform |
-| AndroidX | Android architecture and components |
-| Material Components | UI components |
-| Kotlin Coroutines | Asynchronous operations |
-| Firebase | Application backend / data |
-| Gemini API | AI-generated learning journeys |
-| Solana Mobile Wallet Adapter | Wallet connection |
-| Solana Web3 | Solana interaction |
-
----
-
 ## 🏗️ Architecture
 
 ```text
